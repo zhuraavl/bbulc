@@ -1,0 +1,60 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Partners
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body.loading
+    
+    include includes/header  
+    section.partners-page
+      .container-fluid
+        .row
+          .col-md-12.col-sm-12.col-xs-12
+            h1 Partners
+          .col-md-6.col-sm-6.col-xs-6
+            h6.mini-title Banks
+            ul
+              
+              
+              li
+                a(href="http://www.vtb.com/")
+                  .pic(style="background-image: url(media/images/partners/4.png)")
+                  span VTB
+              li
+                a(href="http://www.ukrgasbank.com/")
+                  .pic(style="background-image: url(media/images/partners/5.png)")
+                  span UkrGasBank
+              
+              
+          .col-md-6.col-sm-6.col-xs-6
+            h6.mini-title Developers
+            ul
+              li
+                a(href="http://ub.com.ua/ru/projects")
+                  .pic(style="background-image: url(media/images/partners/2.png)")
+                  span UkrBud
+              li
+                a(href="http://www.red-realty.ru/")
+                  .pic(style="background-image: url(media/images/partners/6.png)")
+                  span RosEvroDevelopment
+              li
+                a(href="https://www.castelcapital.com/")
+                  .pic(style="background-image: url(media/images/partners/8.png)")
+                  span Catel Capital
+              li
+                a(href="http://c-p.ru/#/")
+                  .pic(style="background-image: url(media/images/partners/1.png)")
+                  span Central Properties
+    
+    include includes/footer
+  

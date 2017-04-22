@@ -1,0 +1,331 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title B-club
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body.loading
+    
+    include includes/header
+    main
+      .center-line
+      section.hero
+        .hero-pic#scaler(style="background-image: url(media/heros/024.jpg)")
+        //ul.hero-slider
+          li
+            .bg(style="background-image: url(media/heros/012.jpg)")
+          li
+            .bg(style="background-image: url(media/heros/02.jpg)")
+          li
+            .bg(style="background-image: url(media/heros/01.jpg)")
+        .bottom-content
+          .container-fluid
+            .row
+              .col-md-6.col-sm-6.col-xs-12.text-center
+                h2 
+                  |“B-Club is private real estate investment community”
+                br
+                br
+                a.btn(href="") 
+                  |  get a membership   
+                  i.fa.fa-arrow-circle-o-right
+                .border-bottom
+            
+              .col-md-6.col-sm-6.col-xs-12
+                .row.features-modules  
+                  .col-sm-6.col-xs-6.col-md-3
+                    h4 &gt;$12M 
+                    p 
+                      |portfolio
+                  .col-sm-6.col-xs-6.col-md-3.center-border
+                    h4 5
+                    p 
+                      |number 
+                      br
+                      |of deals
+                  .col-sm-6.col-xs-6.col-md-3
+                    h4 16
+                    p 
+                      | club
+                      br
+                      | members
+                  .col-sm-6.col-xs-6.col-md-3
+                    h4 4Q 2015 
+                    p 
+                      |date 
+                      br
+                      |of creation
+                  
+      
+      
+      
+      
+      
+      section.about-section
+        container-fluid
+          .row
+            .col-md-6.col-sm-6.col-xs-12.about-b-clud
+              h6.mini-title About b-club
+              h4 
+                span “
+                | Club’s strategy is to search and acquire highly liquid assets with outstanding value upside in CIS countries within 2-4 years investment high-rising
+                span ”
+              a.btn(href="about.html") read more
+            .col-md-6.col-sm-6.col-xs-12
+              .row
+                .col-md-6.col-sm-6.col-xs-12
+                  h6.mini-title Investment Committee
+                  .invest-photos
+                    img(src="media/images/icon/2.png", alt="")
+                  p.text-center Aggregated investment experience of the Investment Committee members exceeds 50 years. They are acting top managers of investment companies and banks.  
+                  //a.btn.b-bord(href="") view detail
+                .col-md-6.col-sm-6.col-xs-12.new-opport-main
+                  h6.mini-title Current opportunities
+                  img(src="media/images/icon/locked.png", alt="")
+                  h5 Club Members only
+                  a.btn.b-bord.b-black(href="#") enter
+      section.deal-and-map
+        .container-fluid
+          .row
+            .col-md-6.col-sm-6.col-xs-12
+              h6.mini-title Deals committed
+              ul.slider-deals-item
+                li
+                  .circle(style="background-image: url(media/heros/010.jpg)")
+                li
+                  .circle(style="background-image: url(media/heros/011.jpg)")
+                li
+                  .circle(style="background-image: url(media/heros/012.jpg)")
+              ul.slider-deals
+                li.deals-item
+                  a(href="project-one.html") Podol Grad, Kiev
+                  .row
+                    .col-xs-12.col-sm-6.col-md-6.border-right
+                      span Status
+                      p Flats, shell&core
+                      span Unit size, sq.m.
+                      p 55-100
+                      span B-Club’s price, $/sq.m.
+                      p Staring $1100
+                    .col-xs-12.col-sm-6.col-md-6
+                      span Budget
+                      p $1,5 M
+                      span Hand-over
+                      p 2016-2017
+                      span Developer
+                      p UkrBud (state-owned)
+                    .col-xs-12
+                      a.btn(href="") view
+                li.deals-item
+                  a(href="project-two.html") Match Point, Moscow
+                  .row
+                    .col-xs-12.col-sm-6.col-md-6.border-right
+                      span Status
+                      p Apartments with fit-out
+                      span Unit size, sq.m.
+                      p 60-65
+                      span B-Club’s price, $/sq.m.
+                      p Starting $2 750
+                    .col-xs-12.col-sm-6.col-md-6
+                      span Budget
+                      p $800 000
+                      span Hand-over
+                      p 4Q 2019
+                      span Developer
+                      p VTB Bank
+                    .col-xs-12
+                      a.btn(href="") view  
+                    
+                li.deals-item
+                  a(href="project-three.html") ONLY, Moscow
+                  .row
+                    .col-xs-12.col-sm-6.col-md-6.border-right
+                      span Status
+                      p Apartments with fit-out
+                      span Unit size, sq.m.
+                      p 40-60
+                      span B-Club’s price, $/sq.m.
+                      p Starting $2 900
+                    .col-xs-12.col-sm-6.col-md-6
+                      span Budget
+                      p $3,5 M
+                      span Hand-over
+                      p 2Q 2018
+                      span Developer
+                      p Central Properties
+                    .col-xs-12
+                      a.btn(href="") view
+                li.deals-item
+                  a(href="project-four.html") Teatralny Dom, Moscow 
+                  .row
+                    .col-xs-12.col-sm-6.col-md-6.border-right
+                      span Status
+                      p Apartments, shell&core with terrace
+                      span Unit size, sq.m.
+                      p 200 + terrace
+                      span B-Club’s price, $/sq.m.
+                      p Starting $9 000
+                    .col-xs-12.col-sm-6.col-md-6
+                      span Budget
+                      p $2,5M
+                      span Hand-over
+                      p 4Q 2017
+                      span Developer
+                      p HALS
+                    .col-xs-12
+                      a.btn(href="") view
+              
+            .col-md-6.col-sm-6.col-xs-12
+              h6.mini-title geography
+              img.fake-map(src="media/images/map.png", alt="")
+              .row.text-center
+                .col-sm-12.col-md-12.col-xs-12
+                  ul.map-points
+                    li
+                      h5 Moscow
+                      span (16000sqm)
+                    li
+                      h5 Kyiv
+                      span (12000sqm)
+                    li
+                      h5 Athens
+                      span (14000sqm)
+                    li
+                      h5 Tbilisi
+                      span (20000sqm)
+                    
+                      
+      section.partners-and-partnership
+        .container-fluid
+          .row
+            .col-md-6.col-sm-6.col-xs-12
+              
+              .partners-main    
+                h6.mini-title partners
+                ul.partner-slider
+                  li
+                    a(href="http://c-p.ru/#/")
+                      .pic(style="background-image: url(media/images/partners/1.png)")
+                      span Central Properties
+                  li
+                    a(href="http://ub.com.ua/ru/projects")
+                      .pic(style="background-image: url(media/images/partners/2.png)")
+                      span UkrBud
+                  li
+                    a(href="http://www.vtb.com/")
+                      .pic(style="background-image: url(media/images/partners/4.png)")
+                      span VTB
+                  li
+                    a(href="http://www.ukrgasbank.com/")
+                      .pic(style="background-image: url(media/images/partners/5.png)")
+                      span UkrGasBank
+                  li
+                    a(href="http://www.red-realty.ru/")
+                      .pic(style="background-image: url(media/images/partners/6.png)")
+                      span RosEvroDevelopment
+                  li
+                    a(href="https://www.castelcapital.com/")
+                      .pic(style="background-image: url(media/images/partners/8.png)")
+                      span Catel Capital
+                a.btn(href="partners.html") show all
+              .partnership-main
+                br
+                h6.mini-title partnership
+                .row
+                  .col-md-6.col-sm-6.col-xs-12.border-right
+                    img(src="media/images/icon/investment.png", alt="")
+
+                    a(href="") Investors
+                    p Requirements for entering B-Club:
+                    ul
+                      li 2 recommendations from the Club members;
+                      li Following the Club’s investment strategy and regulations
+                  .col-md-6.col-sm-6.col-xs-12
+                    img(src="media/images/icon/development.png", alt="")
+                    a(href="") Developers
+                    p 
+                      |To propose projects or assets to the Club. Please, your proposals to 
+                      strong vt@billionestate.com 
+            .col-md-6.col-sm-6.col-xs-12
+              h6.mini-title Latest News
+              .news-main-item
+                .news-main-date
+                  span 7.04.2017
+                .news-main-title
+                  a(href="") Was a Certificate of ownership in the residential complex "Podol-Grad"
+                .news-main-tegs
+                  ul
+                    li
+                      a(href="") news
+                    li
+                      a(href="") developent
+                    li
+                      a(href="") invest
+                    li
+                      a(href="") category
+              .news-main-item
+                .news-main-date
+                  span 29.03.2017
+                .news-main-title
+                  a(href="") Match Point – again a winner!
+                .news-main-tegs
+                  ul
+                    li
+                      a(href="") news
+                    li
+                      a(href="") developent
+                    li
+                      a(href="") invest
+                    li
+                      a(href="") category
+              .news-main-item
+                .news-main-date
+                  span 15.03.2017
+                .news-main-title
+                  a(href="") Residence De Luxe "Theatre House" in the lens of the magazine "Dom& Interior"
+                .news-main-tegs
+                  ul
+                    li
+                      a(href="") news
+                    li
+                      a(href="") developent
+                    li
+                      a(href="") invest
+                    li
+                      a(href="") category
+              
+              .row
+                .col-xs-12.text-center
+                  br
+                  a.btn.b-border(href="news.html") view more
+                
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    include includes/modal-follow
+    include includes/footer

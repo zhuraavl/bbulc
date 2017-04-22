@@ -1,0 +1,67 @@
+.btn
+  padding: 1em 2em
+  text-decoration: none
+  font-size: 1em
+  text-align: center
+  background: $orange
+  color: #fff
+  font-weight: 800
+  border-radius: 50px
+  display: block
+  width: 160px
+  margin: auto
+  &:hover
+    -webkit-animation: fly 2.5s infinite
+    -moz-animation: fly 2.5s infinite
+    -ms-animation: fly 2.5s infinite
+    -o-animation: fly 2.5s infinite
+    animation: fly 2.5s infinite
+  &.b-pri
+    &:hover
+  &.b-sec
+    &:hover
+  &.b-ter
+    &:hover
+  &.white-btn
+    color: $orange
+    background: #fff
+    
+  &.b-bord
+    background: transparent
+    border: 1px solid $orange
+    color: $orange
+    font-size: .8em
+  &.b-black
+    border-color: #333
+    color: #333
+    
+  &.b-big
+    font-size: 20px
+  &.b-small
+    font-size: .8em
+    letter-spacing: .15em
+    text-transform: uppercase
+.show-more
+  padding: 0
+  color: $orange
+  text-decoration: none
+  border-bottom: 3px solid $orange
+  
+  
+
+  
+  
+  
+@-webkit-keyframes fly
+  0%, 100% 
+    transform: scale(1) skewX(0deg)
+  transform: 
+  50% 
+    transform: scale(1.1)
+
+
+@keyframes fly
+  0%, 100% 
+    transform: scale(1) skewX(0deg)
+  50% 
+    transform: scale(1.1) skewX(-8deg)

@@ -1,0 +1,206 @@
+header
+  position: absolute
+  width: 100%
+  top: 15px
+  left: 0
+  z-index: 1000
+
+  
+  .logo-box
+    .logo
+      display: block
+      padding-top: 1em
+      color: transparent
+      position: relative
+      z-index: 10
+      object
+        width: 100%
+        pointer-events: none
+    p
+      font-size: 12px
+      margin: 0
+    
+  a
+    color: #000
+    text-decoration: none
+    
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    margin-top: 35px
+    @include mobil
+      margin-top: 20px
+    li
+      display: inline-block
+      padding: 0 1em
+      @include mobil
+        display: block
+        padding-bottom: .5em
+      a
+        display: inline-block
+        padding: 0 1em
+        font-size: 16px
+        @include mobil
+          padding: 0 .25em
+        i:before
+          font-size: 22px
+          @include mobil
+            font-size: 16px
+        &:hover
+          color: $orange
+      
+      &.lang
+        a
+          
+          &:first-child
+            border-right: 1px solid rgba(0, 0, 0, 0.3)
+      &:last-child
+        margin-left: 100px
+        @include mobil
+          margin-left: 50px
+          margin-top: 20px
+      
+      
+        
+.menu-open button
+  position: relative
+  width: 50px
+  height: 50px
+  background: transparent
+  border: 0
+  box-shadow: none
+  transform: rotate(-90deg)
+  transition: all .3s ease-in-out
+  cursor: pointer
+  span
+    width: 30px
+    height: 4px
+    background: $orange
+    display: block
+    position: absolute
+    right: 0
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: $orange
+      top: 0
+      left: 0
+      transform: translateY(-100%)
+    &:nth-child(1)
+      top: 0
+      &:after
+        transition: all .5s ease-out
+    &:nth-child(2)
+      top: 12px
+      width: 40px
+      &:after
+        transition: all .2s ease-in-out
+    &:nth-child(3)
+      top: 24px
+      width: 50px
+      &:after
+        transition: all .4s ease-in
+    &:nth-child(4)
+      right: 100px
+      background: none
+
+      letter-spacing: 2px
+      font-weight: 600
+      font-size: 12px
+      overflow: visible
+      &:after
+        display: none
+  &:hover, &.hover
+    span:after
+      transform: translateX(0)  
+  &.active
+    transform: rotate(0deg)
+    span:after
+      transform: translateY(0)  
+      background: #fff
+
+
+
+.off-canvas-header
+  position: absolute
+  top: 0px
+  z-index: 100
+  background: $orange
+  width: 100%
+  left: 0
+  padding-top: 150px
+  padding-bottom: 50px
+  transition: all .3s ease-in-out
+  transform: translateY(-100%)
+  .main-menu
+    padding: 0
+    margin: 0
+    list-style: none
+    transition: all .5s ease-in-out
+    transform: translateY(100px)
+    opacity: 0
+    > li
+      float: left
+      width: 25%
+      @include mobil
+        float: none
+        width: 100%
+        text-align: center
+      > a
+        font-size: 2em
+        color: #fff
+        display: block
+        text-decoration: none
+        margin-bottom: 1em
+        @include mobil
+          font-size: 1.3em
+          margin-bottom: .5em
+        img
+          width: 20px
+          display: inline-block
+          margin-right: 5px
+        &:hover
+          text-decoration: underline
+      .drop
+        display: block
+        margin: 0
+        padding: 0
+        padding-left: 1.5em
+        max-width: 200px
+        @include mobil
+          display: none
+        li
+          display: block !important
+          color: #fff
+          a
+            color: rgba(255, 255, 255, 0.85)
+            display: block
+            font-size: 1em
+            text-decoration: none
+            font-weight: 500
+            margin-bottom: .5em
+            position: relative
+            
+            &:after
+              content: ''
+              position: absolute
+              top: 4px
+              left: -20px
+              border-radius: 100%
+              display: block
+              width: 6px
+              height: 6px
+              background: rgba(255, 255, 255, 0.75)
+        
+  &.show
+    opacity: 1
+    visibility: visible
+    transform: translateY(0)
+    .main-menu
+      opacity: 1
+      visibility: visible
+      transform: translateY(0)

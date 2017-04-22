@@ -1,0 +1,138 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title News
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body.loading
+    
+    include includes/header 
+    main
+      section.news-page
+        .container-fluid
+          .row
+            .col-md-12.col-sm-12.col-xs-12.text-center
+              h3.title News
+              p 
+                |We write about relevant industry news.
+
+          .row
+            .col-md-3.col-sm-4.col-xs-12
+              .search-box
+                input(type="text" placeholder="Search")
+                i.fa.fa-search
+                  input(type="submit" value="")
+              .recent-post
+                h6.mini-title RECENT POSTS
+                a.title-news(href="news-item.html") Was a Certificate of ownership in the residential complex "Podol-Grad"
+                a.title-news(href="") МФК Match Point – again a winner!
+                a.title-news(href="") B-club supports startups at the Paris Fintech Forum
+                a.title-news(href="") Residence De Luxe "Theatre House" in the lens of the magazine "Dom& Interior"
+              .archive
+                h6.mini-title categories
+                a(href="") category
+                a(href="") category
+                a(href="") category
+                a(href="") category
+
+            .col-md-9.col-sm-8.col-xs-12
+              .row
+                .col-md-4.col-sm-6.col-xs-12
+                  .news-item
+                    span 07.04.2017
+                    a(href="news-item.html") Was a Certificate of ownership in the residential complex "Podol-Grad"
+                    p Dear investors, we are glad to inform You that already registered a Certificate of ownership in the residential complex "Podol-City".
+                    ul
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                    img(src="media/heros/031.jpg", alt="")
+
+                .col-md-4.col-sm-6.col-xs-12
+                  .news-item
+                    span 29.03.2017
+                    a(href="") Match Point – again a winner!
+                    p Match Point – a multifunctional complex with residential apartments business-class and volleyball arena on Kutuzov Avenue – became the winner of the Move Realty Awards in the category "the Apartment of a business class, Moscow".
+                    ul
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                    img(src="media/heros/030.jpg", alt="")
+
+                .col-md-4.col-sm-6.col-xs-12
+                  .news-item
+                    span 15.03.2017
+                    a(href="") Residence De Luxe "Theatre House" in the lens of the magazine "Dom& Interior"
+                    p Residence De Luxe "Theatre House" gives you an amazing opportunity to plunge into the memories and re-create the architectural image of Moscow of the last century.
+                    ul
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                    img(src="media/heros/032.jpg", alt="")
+
+                .col-md-4
+                  .news-item
+                    span 20.03.2017
+                    a(href="") THE START OF SALES OF COMMERCIAL SPACE!
+                    p The total area of non-residential premises ONLY intended for commercial use, is 2 103 sqm On the choice of buyers are offered 21 lots from 80 to 380 sq. m. with the possibility of combining.
+                    ul
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                      li
+                        a(href="") category
+                    img(src="media/heros/033.jpg", alt="")
+
+
+
+
+
+          .row
+            .col-md-12
+              ul.pagination
+                li
+                  a(href="")
+                    i.fa.fa-long-arrow-left
+                li
+                  a(href="") 1
+                li
+                  a(href="") 2
+                li
+                  a(href="") 3
+                li
+                  a(href="")
+                    i.fa.fa-long-arrow-right
+
+
+
+
+
+
+
+
+
+
+
+
+
+    include includes/footer
+  

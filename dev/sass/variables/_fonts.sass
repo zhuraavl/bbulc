@@ -1,0 +1,22 @@
+@mixin embed-font($font-name, $font-filepath-and-name, $font-weight)
+  @font-face
+    font-family: $font-name
+    src: url(("#{$font-filepath-and-name}.eot"))
+    src: url(("#{$font-filepath-and-name}.eot?#iefix")) format('embedded-opentype'), url(("#{$font-filepath-and-name}.woff")) format('woff'), url(("#{$font-filepath-and-name}.ttf")) format('truetype'), url(("#{$font-filepath-and-name}.svg#svgFontName")) format('svg')
+    font-weight: $font-weight
+    font-style: normal
+
+
+// Akzidenz
+@include embed-font('akzidenz-grotesk', '../media/fonts/az/akzidenz_grotesk_black-webfont', 800);
+@include embed-font('akzidenz-grotesk', '../media/fonts/az/akzidenz_grotesk_roman-webfont', 500);
+@include embed-font('akzidenz-grotesk', '../media/fonts/az/akzidenz_grotesk_light-webfont', 300);
+@include embed-font('akzidenz-grotesk', '../media/fonts/az/akzidenz_grotesk_bold-webfont', 700);
+  
+  
+// Gotham
+
+@font-face 
+	font-family: 'GothamPro-Light'
+	src: url('../media/fonts/GothamPro/GothamPro-Light.eot?') format('eot'), url('../media/fonts/GothamPro/GothamPro-Light.otf')  format('opentype'), url('../media/fonts/GothamPro/GothamPro-Light.woff') format('woff'), url('../media/fonts/GothamPro/GothamPro-Light.ttf')  format('truetype'), url('../media/fonts/GothamPro/GothamPro-Light.svg#GothamPro-Light') format('svg')
+

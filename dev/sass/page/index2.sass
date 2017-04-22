@@ -1,0 +1,346 @@
+
+  
+main
+  border: 10px solid $orange
+.hero
+  position: relative
+  height: 100vh
+  min-height: 700px
+  overflow: hidden
+  .hero-pic
+    position: absolute
+    z-index: -1
+    width: 80%
+    height: 70%
+    background-size: cover
+    background-position: center
+    top: 0px
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    will-change: transform
+  .hero-slider
+    padding: 0
+    margin: 0
+    .bg
+      height: 100vh
+      min-height: 700px
+      background-size: cover
+      background-position: center
+    .slick-arrow
+      display: none !important
+      
+  .bottom-content
+    position: absolute
+    height: 250px
+    bottom: 0
+    left: 0
+    width: 100%
+    z-index: 20
+    @include mobil
+      position: relative
+      height: auto
+      padding-top: 200px
+    .btn
+      width: 250px
+      @include mobil
+        width: 200px
+        font-size: 12px
+    .text-center
+      h2
+        margin: 0
+        font-size: 2.5em
+        font-family: $serif
+        color: $orange
+        @include mobil
+          font-size: 1.75em
+    .features-modules
+      text-align: center
+      @include mobil
+        margin-top: 50px
+      .center-border
+        border-left: 1px solid rgba(0, 0, 0, 0.3)
+        border-right: 1px solid rgba(0, 0, 0, 0.3)
+        @include mobil
+          border: 0
+      h4
+        font-size: 2.5em
+        margin-bottom: 0
+        @include mobil
+          font-size: 1.5em
+          font-weight: 600
+      p
+        font-size: 1em
+        margin: 0
+        @include mobil
+          font-size: 12px
+          margin-bottom: 1em
+      
+        
+        
+.about-section
+  padding-top: 50px
+  padding-bottom: 40px
+  .about-b-clud
+    text-align: center
+    h4
+      width: 90%
+      font-size: 28px
+      margin: auto
+      span
+        color: #999
+        line-height: 1
+      &:after
+        content: ''
+        display: block
+        width: 100px
+        height: 1px
+        background: #000
+        margin: auto
+        margin-top: .5em
+        margin-bottom: 1em
+  
+  .invest-photos
+    text-align: center
+    img
+      width: 60px
+      margin: auto
+  .b-bord
+    margin: auto
+    width: 150px
+    display: block
+    line-height: 1
+  .new-opport-main
+    text-align: center
+    img
+      width: 100px
+      margin: auto
+      
+      
+.deal-and-map
+  padding-bottom: 50px
+  .fake-map
+    max-width: 100%
+    width: 80%
+    display: block
+    margin: auto
+    @include mobil
+      width: 100%
+  #map
+    height: 300px
+    width: 80%
+    margin: auto
+  .map-points
+    padding: 0
+    margin: 0
+    list-style: none
+    margin-top: 1em
+    li
+      display: inline-block
+      margin: 0 1em
+      h5
+        margin: 0
+        font-size: 18px
+      span
+        color: #999
+        font-size: 14px
+        opacity: 0
+  .slider-deals-item
+    padding: 0
+    margin: 0
+    .slick-slide
+      outline: none !important
+      padding: 20px 0
+    .circle
+      opacity: .5
+      width: 80px
+      height: 80px
+      background-size: cover
+      border-radius: 100%
+      margin: auto
+      border: 2px solid #fff
+      transition: all .5s ease-in-out
+      margin-bottom: 20px
+    .slick-current
+      .circle
+        border-color: $orange
+        transform: scale(1.5)
+        opacity: 1
+    .slick-arrow
+      position: absolute
+      z-index: 10
+      top: 25%
+      padding: 0
+      border: 0
+      color: transparent
+      background: transparent  
+      
+      &:after
+        content: ''
+        color: $orange
+        font-size: 30px
+        display: block
+        text-align: center
+      &.slick-next
+        left: 10%
+        @include mobil
+          left: 0
+        &:after
+          content: '←'
+      &.slick-prev
+        right: 10%
+        @include mobil
+          right: 0
+        &:after
+          content: '→'
+  .slider-deals
+    padding: 0
+    margin: 0
+    
+        
+        
+        
+        
+        
+.partners-and-partnership
+  padding-bottom: 50px
+  .partnership-main
+    text-align: center
+    img
+      width: 75px
+      margin: auto
+    a
+      display: block
+      text-decoration: underline
+      font-size: 24px
+      color: $orange
+      padding: .5em 0
+    p
+      text-align: left
+      font-size: 14px
+    ul
+      text-align: left
+      li
+        font-size: 12px
+        margin-bottom: .5em
+    .border-right
+      border-right: 1px solid #eee
+      @include mobil
+        border: 0
+  .partners-main
+    .btn
+      border: 1px solid #999
+      background: transparent
+      width: 130px
+      margin: 1em auto 0
+      color: #999
+      font-size: 14px
+    .partner-slider
+      padding: 0
+      margin: 0
+      text-align: center
+      li
+        
+        a
+          display: block
+          color: #000
+          text-decoration: none
+          span
+            margin-top: 1.5em
+            display: block
+            color: #999
+          .pic
+            width: 90%
+            margin: auto
+            min-width: 150px
+            height: 75px
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center
+          &:hover
+            span
+              color: $orange
+  .news-main-item
+    background: #f4f4f4
+    padding: 10px 20px 20px
+    margin-bottom: 15px
+    text-align: center
+    transition: all .4s ease-in-out
+    .news-main-date
+      span
+        font-size: 12px
+        margin: .5em 0
+        display: block
+        color: rgba(0, 0, 0, 0.7)
+    .news-main-title
+      a
+        color: $orange
+        font-size: 22px
+        text-decoration: none
+        display: block
+        margin-bottom: .5em
+        transition: all .4s ease-in-out
+    .news-main-tegs
+      ul
+        padding: 0
+        margin: 0
+        li
+          display: inline-block
+          margin-right: .5em
+          margin-bottom: .75em
+          a
+            font-size: 12px
+            padding: 5px 10px
+            background: #ccc
+            color: #000
+            text-decoration: none
+    &:hover
+      background: $orange
+      .news-main-title a
+        color: #fff
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+.partners-page
+  padding-top: 100px
+  h1
+    text-align: center
+    font-size: 3em
+    font-family: $serif
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+      display: inline-block
+      margin-bottom: 1em
+      a
+        display: block
+        text-align: center
+        text-decoration: none
+        .pic
+          width: 200px
+          height: 100px
+          background-size: contain
+          background-repeat: no-repeat
+          background-position: center
+        span
+          font-size: 14px
+          color: #777
+          margin-top: 1em
+          display: block
+        &:hover
+          span
+            color: $orange
