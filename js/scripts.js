@@ -35,6 +35,14 @@ $(document).ready(function () {
     $(".off-canvas-header").toggleClass('show');
     $(this).toggleClass('active');
   });
+  
+  $(".open-form").click(function () {
+    $(".registration-form").addClass('show');
+  });
+  
+  $(".close-form").click(function () {
+    $(".registration-form").removeClass('show');
+  });
 
 
   $('.slider-deals').slick({
