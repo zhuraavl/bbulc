@@ -1,0 +1,77 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Feed
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body.loading
+    
+    include includes/header  
+    section.feed-box
+      .container-fluid
+        .row
+          .col-md-3
+            .my-account-box
+              h6 my account
+              .user-box
+                h4 Ivan Illarionov
+                h5 Investor
+                a(href="0995555555") +38099555555
+                a(href="pachta@gmail.com") pochta@gmail.com
+              ul
+                li
+                  a(href="feed.html") Current opportunities
+                li
+                  a(href="message.html") My message
+                li
+                  a(href="setting.html") My settings
+                li
+                  a(href="") Quit
+          .col-md-9
+            .feed-item
+              .feed-content
+                .box
+                .feed-info
+                  .row
+                    .col-sm-6.col-xs-12
+                      h2 Title presentation
+                      span.date 17.05.2017
+                    .col-sm-6.col-xs-12
+                      p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quod soluta dolores delectus asperiores ratione saepe hic at repudiandae animi?
+              .feed-comment
+                h6 comments
+                .no-comment
+                  p no comments
+                .item-comment
+                  .item-comment-head
+                    h5
+                      |12.04.2017
+                      span Ivan Illarionov
+                      | Investor
+                  .item-comment-body
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nesciunt rem accusamus nihil commodi ab tempora odio reiciendis dolores debitis!
+                .item-comment.you
+                  .item-comment-head
+                    h5
+                      |12.04.2017
+                      span You
+                  .item-comment-body
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, possimus.
+                      
+                .add-comment
+                  textarea(placeholder="Enter you comment")
+                  button.btn add new comment
+                
+          
+    
+    include includes/footer
+  

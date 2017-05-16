@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Message
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body.loading
+    
+    include includes/header  
+    section.feed-box
+      .container-fluid
+        .row
+          .col-md-3
+            .my-account-box
+              h6 my account
+              .user-box
+                h4 Ivan Illarionov
+                h5 Investor
+                a(href="0995555555") +38099555555
+                a(href="pachta@gmail.com") pochta@gmail.com
+              ul
+                li
+                  a(href="feed.html") Current opportunities
+                li
+                  a(href="message.html") My message
+                li
+                  a(href="setting.html") My settings
+                li
+                  a(href="") Quit
+          .col-md-9
+            .message-comment-box
+              .message-comment-item
+                .message-comment-head
+                  h5
+                    span.date 15.04.2071 13:45:00
+                    | Anton Smorodina
+                .message-comment-body
+                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, corrupti?
+              .message-comment-item.you
+                .message-comment-head
+                  h5
+                    span.date 15.04.2071 13:45:00
+                    | You
+                .message-comment-body
+                  p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis pariatur totam labore ducimus placeat perspiciatis, in natus ipsam expedita laborum! Voluptate excepturi sapiente delectus provident, enim laboriosam repudiandae tempora non!
+              .add-comment
+                textarea(placeholder="Enter you message")
+                button.btn add message
+                
+          
+    
+    include includes/footer
+  
